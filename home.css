@@ -1,0 +1,333 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  background-color:#e6f0ff;
+  padding: 0 30px;
+  position: relative;
+}
+
+/* Register button now on far left with third-largest width */
+.button {
+  width: 15%;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  font-size: 25px;
+}
+
+/* Heading takes second-most space */
+.heading {
+  width: 15%;
+  text-align: center;
+  font-size: 35px;
+}
+
+/* Community tabs remain unchanged */
+.community {
+  width: 5%;
+  font-size: 25px;
+}
+
+/* Search bar takes most space */
+.search {
+  
+  
+  width: 75%;
+}
+
+/* Search input covers 90% of its container */
+#searchBar{
+  width: 95%;
+  height: 100%;
+  font-size: 16px;
+  border-radius: 0.5rem;
+}
+
+.Register {
+  font-size: 25px;
+  margin-left: 0;
+  border: none;
+  border-radius: 0.25rem;
+}
+
+#button {
+  height: 80px;
+  width: 100%;
+  border: none;
+  border-radius: 0.25rem;
+}
+#button:hover{
+  transform: scale(1.02);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+.box1 {
+  width: 100%;
+  height: 650px;
+  background-image: url("bigBox2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;   /* 👈 stack children vertically */
+  justify-content: flex-start; 
+  align-items: flex-start;  /* align to the left side */
+  gap: 20px;                /* space between boxes */
+  padding: 20px;            /* little padding from edges */
+}
+.box1A{
+  width:800px;
+  height: 900px;
+  display: flex;
+  flex-direction: column;   /* 👈 stack children vertically */
+  justify-content: flex-start; 
+  align-items: flex-start;  /* align to the left side */
+  gap: 30px;                /* space between boxes */
+  padding: 20px;   
+}
+
+
+/* Video directly inside box1 */
+.video1 {
+  width: 325px;
+  height: 200px;
+  border: none;
+}
+
+
+     
+
+
+.box2  {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  
+}
+
+/* Outer containers */
+.outerBox,
+.outerBox2,
+.outer3,
+.outer4,
+.outer5 {
+  width: 18%;                
+  height: 90%;
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;   /* stack top + bottom */
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.outerBox:hover,
+.outerBox2:hover,
+.outer3:hover,
+.outer4:hover,
+.outer5:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+/* Top section (90%) */
+.samallbox2A,
+.samallbox2B,
+.samallbox2C,
+.samallbox2D,
+.samallbox2E {
+  flex: 9;
+  background-image: url("1rk.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Bottom section (10%) */
+.smallbox2Aa,
+.smallbox2Ab,
+.smallbox2Ac,
+.smallbox2Ad,
+.smallbox2Ae {
+  flex: 1;
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.fotter {
+  width: 100%;
+  background-color: #1a1a1a;   /* dark clean look */
+  color: white;
+  display: flex;
+  flex-direction: column;      /* stack text, button, copyright */
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  gap: 20px;
+  text-align: center;
+}
+
+/* Main heading text */
+#text {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* CTA button */
+#endButton {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  background-color: lightskyblue;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+#endButton:hover {
+  background-color: #0056b3;
+}
+
+/* Bottom section */
+.fotter {
+  width: 100%;
+  background-color: #1a1a1a;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  gap: 20px;
+  text-align: center;
+}
+
+/* Main text */
+#text {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Call-to-action button */
+#endButton {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  background-color: #007bff;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+#endButton:hover {
+  background-color: #0056b3;
+}
+
+/* Footer nav links */
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;   /* wraps if too long */
+  justify-content: center;
+  gap: 15px;
+  max-width: 800px;
+}
+.footer-links a {
+  color: #aaa;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+.footer-links a:hover {
+  color: #fff;
+}
+
+/* Bottom section */
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 15px;
+  font-size: 14px;
+}
+.footer-bottom a {
+  color: #aaa;
+  text-decoration: none;
+  margin: 0 8px;
+  transition: color 0.3s;
+}
+.footer-bottom a:hover {
+  color: #fff;
+}
+/* Outer category container */
+/* Main outer container */
+.category {
+  width: 100%;
+  height: 400px;            /* adjust as needed */
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #ccc;
+  border-radius: 0;         /* no curved edges */
+  overflow: hidden;
+  border: none;
+}
+
+/* Navbar at top (fills completely) */
+.navbarCat {
+   
+  color:black;
+  padding: 12px 20px;
+  font-size: 35px;
+  font-weight: bold;
+  flex: 0 0 60px;           /* fixed height */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Category box container (fills remaining space) */
+.category-boxes {
+  flex: 1;
+  display: flex;
+  gap: 15px;                /* ✅ spacing between boxes */
+  padding: 15px;            /* ensures boxes don’t touch edges */
+  box-sizing: border-box;
+}
+
+/* Each box */
+.category1,.category2,.category3 {
+  
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+   flex: 9;
+  background-image: url("1rk.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Hover effect */
+.category1:hover,.category2:hover,.category3:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}

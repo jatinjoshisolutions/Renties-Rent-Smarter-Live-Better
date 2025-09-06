@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Renties Login</title>
+  
+  <!-- Link to your CSS -->
+  <link rel="stylesheet" href="style.css" />
+  
+  <!-- Font Awesome CDN for icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+</head>
+
+<body>
+  <div class="bigBox">
+    <p id="heading1">
+      <i class="fas fa-home"></i> Havenly
+    </p><br>
+     <p id="heading">Your Trusted Real State Guid</p>
+    
+
+    <p id="heading">Username</p>
+    <form class="username">
+      <!-- Added id="username" -->
+      <input type="text" id="username" placeholder="Enter your user name" />
+    </form>
+
+    <p id="heading">Password</p>
+    <form class="pass">
+      <!-- Added id="password" -->
+      <input type="password" id="password" placeholder="Enter your password" />
+    </form>
+
+    <br />
+    <!-- Added id="loginBtn" to button, removed <a> inside button -->
+    <button class="login" id="loginBtn">Login </button>
+    <a href="createAccount.html" class="nav-button">Create Account</a>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>
