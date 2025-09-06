@@ -1,0 +1,52 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+  <meta charset="UTF-8" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+  <title>Renties Login</title> 
+
+  <!-- Link to your CSS --> 
+  <link rel="stylesheet" href="style.css" /> 
+
+  <!-- Font Awesome CDN for icons --> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" /> 
+</head> 
+
+<body> 
+  <div class="bigBox"> 
+    <p id="heading1"> 
+      <i class="fas fa-home"></i> Havenly 
+    </p><br> 
+    <p id="heading">Your Trusted Real State Guid</p> 
+
+    <p id="heading">Username</p> 
+    <form class="username"> 
+      <input type="text" id="username" placeholder="Enter your user name" /> 
+    </form> 
+
+    <p id="heading">Password</p> 
+    <form class="pass"> 
+      <input type="password" id="password" placeholder="Enter your password" /> 
+    </form> 
+
+    <br /> 
+    <!-- Login Button --> 
+    <button class="login" id="loginBtn">Login</button> 
+
+    <!-- ✅ Guest Login Button -->
+    <button class="login" id="guestBtn">Guest Login</button>
+
+    <a href="createAccount.html" class="nav-button">Create Account</a> 
+  </div> 
+
+  <script src="login.js"></script> 
+
+  <script>
+    // Redirect Guest Login directly to home page
+    document.getElementById("guestBtn").addEventListener("click", function () {
+      window.location.href = "home.html"; // 🔹 Change "home.html" to your actual homepage filename
+    });
+  </script>
+</body> 
+<script src="login.js"></script> 
+</html>
