@@ -92,4 +92,3 @@ Replace JS alerts with custom modal popups.
 
 Jatin (Project Developer)
 
-Assisted by ChatGPT (GPT-5)
