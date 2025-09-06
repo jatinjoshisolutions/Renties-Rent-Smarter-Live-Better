@@ -2,6 +2,8 @@
 
 Havenly is a simple real estate rental web app that allows users to explore rental properties, create accounts, and book houses. The project focuses on responsive design, intuitive navigation, and interactive features like popups and guest login.
 
+**Demo The website** = https://jatinjoshisolutions.github.io/Renties-Rent-Smarter-Live-Better/
+
 **🚀 Features
 🔑 Authentication**
 
